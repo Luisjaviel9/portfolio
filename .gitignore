@@ -1,0 +1,29 @@
+# ======================
+# Django
+# ======================
+backend/venv/
+backend/db.sqlite3
+**/__pycache__/
+*.py[cod]
+
+# ======================
+# React
+# ======================
+frontend/node_modules/
+frontend/dist/
+
+# ======================
+# Variables de entorno
+# ======================
+.env
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# Sistema
+# ======================
+.DS_Store
+Thumbs.db
