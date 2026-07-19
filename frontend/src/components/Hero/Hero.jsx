@@ -26,19 +26,34 @@ export default function Hero() {
             Actualmente desarrollo soluciones web
             modernas y escalables.
           </p>
+           <div className="flex gap-5 mt-10 flex-wrap">
 
-          <div className="flex gap-5 mt-10">
+         <a
+          href="#proyectos"
+          className="bg-cyan-500 hover:bg-cyan-600 px-7 py-3 rounded-lg text-white font-semibold transition duration-300"
+          >
+          Ver Proyectos
+         </a>
 
-            <button className="bg-cyan-500 hover:bg-cyan-600 px-7 py-3 rounded-lg text-white font-semibold duration-300">
-              Ver Proyectos
-            </button>
+        <a
+          href="/cv/Luis_De_La_Rosa_CV.pdf"
+          download
+         className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-7 py-3 rounded-lg transition duration-300"
+        >
+         Descargar CV
+       </a>
 
-            <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-7 py-3 rounded-lg duration-300">
-              Descargar CV
-            </button>
+       <a
+         href="https://github.com/Luisjaviel9"
+         target="_blank"
+        rel="noopener noreferrer"
+        className="border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white hover:shadow-lg hover:shadow-cyan-500/40 px-7 py-3 rounded-lg transition-all duration-300"
+>
+        GitHub
+       </a>
 
-          </div>
-
+       </div>
+      
         </div>
 
         {/* Imagen */}

@@ -33,7 +33,21 @@ export default function About() {
 
         {/* Tarjeta */}
 
-        <div className="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+        <div
+  className="
+    bg-slate-800
+    rounded-2xl
+    border
+    border-slate-700
+    p-8
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:border-cyan-400
+    hover:shadow-2xl
+    hover:shadow-cyan-500/20
+  "
+>
 
           <h3 className="text-2xl font-bold text-white mb-8">
             Actualmente
