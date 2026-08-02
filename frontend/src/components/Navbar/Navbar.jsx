@@ -20,20 +20,21 @@ export default function Navbar() {
             </a>
           </li>
 
-          <li>
-            <a href="#projects" className="hover:text-cyan-400 transition-colors">
-              Proyectos
-            </a>
-          </li>
-
-          <li>
+           <li>
             <a href="#technologies" className="hover:text-cyan-400 transition-colors">
               Tecnologías
             </a>
           </li>
 
+
           <li>
-            <a href="#contact" className="hover:text-cyan-400 transition-colors">
+            <a href="#proyectos" className="hover:text-cyan-400 transition-colors">
+              Proyectos
+            </a>
+          </li>
+
+          <li>
+            <a href="#contacto" className="hover:text-cyan-400 transition-colors">
               Contacto
             </a>
           </li>

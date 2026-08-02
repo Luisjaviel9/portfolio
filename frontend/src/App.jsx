@@ -6,6 +6,7 @@ import Proyectos from "./components/Proyectos/Proyectos";
 import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
 import Formacion from "./components/Formacion/Forrmacion";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
 export default function App() {
   return (
     <main className="min-h-screen bg-slate-900">
@@ -18,6 +19,7 @@ export default function App() {
       <Proyectos/>
        <Contacto/>
        <Footer />
+       <ScrollTop />
     </main>
    
   );
