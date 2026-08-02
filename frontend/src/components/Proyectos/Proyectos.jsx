@@ -28,9 +28,9 @@ export default function Proyectos() {
   return (
     <section
       id="proyectos"
-      className="max-w-7xl mx-auto px-8 py-24"
+      className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24"
     >
-      <h2 className="text-4xl font-bold text-cyan-400 mb-14">
+      <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-10 md:mb-14">
         Proyectos
       </h2>
 
@@ -40,7 +40,7 @@ export default function Proyectos() {
 
           <div
             key={proyecto.titulo}
-            className="bg-slate-800 border border-slate-700 rounded-2xl p-6 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20"
+            className="bg-slate-800 border border-slate-700 rounded-2xl p-5 md:p-6 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20"
           >
 
             <div className="h-44 bg-slate-700 rounded-xl flex items-center justify-center mb-6">

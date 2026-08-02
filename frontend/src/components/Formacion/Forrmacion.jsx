@@ -32,9 +32,9 @@ export default function Formacion() {
   return (
     <section
       id="formacion"
-      className="max-w-7xl mx-auto px-8 py-24"
+     className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24"
     >
-      <h2 className="text-4xl font-bold text-cyan-400 text-center mb-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 text-center mb-6">
         Formación y Certificaciones
       </h2>
 
@@ -50,7 +50,7 @@ export default function Formacion() {
 
           <div
             key={item.titulo}
-            className="bg-slate-800 border border-slate-700 rounded-2xl p-8 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20"
+            className="bg-slate-800 border border-slate-700 rounded-2xl p-5 md:p-8 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20"
           >
 
             <span className="text-cyan-400 text-sm font-semibold">

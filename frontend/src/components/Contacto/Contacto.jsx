@@ -11,7 +11,7 @@ export default function Contacto() {
   return (
     <section
       id="contacto"
-      className="max-w-6xl mx-auto px-8 py-24"
+      className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-24"
     >
       <h2 className="text-4xl font-bold text-cyan-400 text-center mb-6">
         Contacto
@@ -22,7 +22,7 @@ export default function Contacto() {
         Estoy disponible para colaborar y crear soluciones reales.
       </p>
 
-      <div className="bg-slate-800 border border-slate-700 rounded-2xl p-10">
+      <div className="bg-slate-800 border border-slate-700 rounded-2xl p-5 md:p-10">
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* Correo */}
@@ -90,7 +90,7 @@ export default function Contacto() {
               href="https://www.linkedin.com/in/luis-de-la-rosa-6a8251241/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-cyan-400 transition"
+              className="text-white hover:text-cyan-400 transition "
             >
               Ver mi perfil de LinkedIn
             </a>
@@ -109,7 +109,7 @@ export default function Contacto() {
               href="https://wa.me/18094577329?text=Hola%20Luis,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo%20sobre%20una%20oportunidad."
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-cyan-400 transition"
+              className="text-white hover:text-cyan-400 transition text-center"
             >
               +1 (809) 457-7329
             </a>
@@ -132,13 +132,13 @@ export default function Contacto() {
         </div>
 
         {/* Botones */}
-        <div className="flex flex-wrap justify-center gap-5 mt-14">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-5 mt-14">
 
          <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=deluisjaviel7@gmail.com"
         target="_blank"
          rel="noopener noreferrer"
-        className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl transition"
+        className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl transition text-center"
 >
          Enviar correo
         </a>
@@ -146,7 +146,7 @@ export default function Contacto() {
             href="https://github.com/Luisjaviel9"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition"
+            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition text-center"
           >
             GitHub
           </a>
@@ -155,7 +155,7 @@ export default function Contacto() {
             href="https://www.linkedin.com/in/luis-de-la-rosa-6a8251241/"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition"
+            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition text-center"
           >
             LinkedIn
           </a>
@@ -164,7 +164,7 @@ export default function Contacto() {
             href="https://wa.me/18094577329?text=Hola%20Luis,%20vi%20tu%20portafolio%20y%20me%20gustaría%20conversar%20contigo%20sobre%20una%20oportunidad."
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition"
+            className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-4 rounded-xl transition text-center"
           >
             WhatsApp
           </a>

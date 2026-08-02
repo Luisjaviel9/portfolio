@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section className="max-w-7xl mx-auto px-8 min-h-[90vh] flex items-center">
+    <section className="max-w-7xl mx-auto px-4 md:px-8 min-h-[65vh] flex items-center">
 
-      <div className="grid grid-cols-2 gap-16 items-center">
+     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 
         {/* Texto */}
 
@@ -12,9 +12,9 @@ export default function Hero() {
             Hola, soy 👋
           </p>
 
-         <h1 className="text-6xl font-extrabold text-white mt-5 leading-tight">
-          Luis de la Rosa
-         </h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mt-5 leading-tight">
+             Luis De La Rosa
+          </h1>
 
           <p className="text-2xl text-slate-300 mt-8">
             Desarrollador Full Stack
@@ -60,7 +60,7 @@ export default function Hero() {
 
         <div className="flex justify-center">
 
-          <div className="w-96 h-96 rounded-full bg-slate-800 border-4 border-cyan-500 flex items-center justify-center">
+      <div className="w-64 h-64 md:w-96 md:h-96 rounded-full bg-slate-800 border-4 border-cyan-500 flex items-center justify-center">
 
             <span className="text-slate-500 text-xl">
               Tu Foto

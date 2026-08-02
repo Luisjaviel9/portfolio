@@ -2,13 +2,13 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto px-8 py-24"
+      className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24"
     >
-      <h2 className="text-4xl font-bold text-cyan-400 mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 md:mb-12">
         Sobre mí
       </h2>
 
-      <div className="grid lg:grid-cols-2 gap-16">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
 
         {/* Texto */}
 
@@ -39,7 +39,7 @@ export default function About() {
     rounded-2xl
     border
     border-slate-700
-    p-8
+    p-5 md:p-8
     transition-all
     duration-300
     hover:scale-105
