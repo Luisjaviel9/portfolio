@@ -1,4 +1,6 @@
+
 export default function Hero() {
+ 
   return (
     <section className="max-w-7xl mx-auto px-4 md:px-8 min-h-[65vh] flex items-center">
 
@@ -11,21 +13,20 @@ export default function Hero() {
           <p className="text-cyan-400 text-xl font-semibold">
             Hola, soy 👋
           </p>
-
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mt-5 leading-tight">
-             Luis De La Rosa
-          </h1>
-
-          <p className="text-2xl text-slate-300 mt-8">
-            Desarrollador Full Stack
-          </p>
-
-          <p className="text-slate-400 mt-6 leading-8 text-lg">
-            Especializado en Python, Django,
-            Django REST Framework y React.
-            Actualmente desarrollo soluciones web
-            modernas y escalables.
-          </p>
+        <h1
+          className="text-4xl md:text-6xl font-extrabold mt-5 leading-tight">
+       Luis De La Rosa
+        </h1>
+      <p className="text-2xl mt-8">
+        Desarrollador Full Stack
+      </p>
+            
+   <p className="mt-6 leading-8 text-lg">
+  Especializado en Python, Django,
+  Django REST Framework y React.
+  Actualmente desarrollo soluciones web
+  modernas y escalables.
+</p>
            <div className="flex gap-5 mt-10 flex-wrap">
 
          <a

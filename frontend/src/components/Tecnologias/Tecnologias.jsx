@@ -12,7 +12,7 @@ const tecnologias = [
 export default function Tecnologias() {
   return (
     <section
-      id="technologies"
+      id="technologias"
       className="max-w-7xl mx-auto px-8 py-24"
     >
       <h2 className="text-4xl font-bold text-cyan-400 mb-14">

@@ -38,7 +38,7 @@ export default function Formacion() {
         Formación y Certificaciones
       </h2>
 
-      <p className="text-slate-300 text-center max-w-3xl mx-auto text-lg leading-8 mb-16">
+      <p className= "text-center max-w-3xl mx-auto text-lg leading-8 mb-16">
         Creo en el aprendizaje continuo. Mi objetivo es mantenerme
         actualizado con las tecnologías más demandadas del desarrollo
         de software y la computación en la nube.

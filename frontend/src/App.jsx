@@ -7,20 +7,21 @@ import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
 import Formacion from "./components/Formacion/Forrmacion";
 import ScrollTop from "./components/ScrollTop/ScrollTop";
+import Layout from "./components/Layout/Layout";
 export default function App() {
   return (
-    <main className="min-h-screen bg-slate-900">
-
-      <Navbar />
-      <Hero />
-     <About/>
-     <Formacion />
-     <Tecnologias/>
-      <Proyectos/>
-       <Contacto/>
-       <Footer />
-       <ScrollTop />
-    </main>
-   
+    <Layout>
+      <main className="min-h-screen">
+        <Navbar />
+        <Hero />
+        <About />
+        <Formacion />
+        <Tecnologias />
+        <Proyectos />
+        <Contacto />
+        <Footer />
+        <ScrollTop />
+      </main>
+    </Layout>
   );
 }

@@ -1,3 +1,5 @@
+import {useState} from "react";
+
 import {
   FaEnvelope,
   FaMapMarkerAlt,
@@ -8,7 +10,59 @@ import {
 } from "react-icons/fa";
 
 export default function Contacto() {
-  return (
+const[formulario, setFormulario]= useState({
+
+  nombre:  "",
+  correo:  "",
+  mensaje: "",
+});
+
+const [enviando, setEnviando] = useState(false);
+const [estado, setEstado] = useState("");
+
+const enviarFormulario = async (e) => {
+  e.preventDefault();
+
+  setEnviando(true);
+  setEstado("");
+
+  try {
+    const respuesta = await fetch(
+      "http://127.0.0.1:8000/api/contacto/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formulario),
+      }
+    );
+
+    if (respuesta.ok) {
+      setEstado("Mensaje enviado correctamente.");
+
+      setFormulario({
+        nombre: "",
+        correo: "",
+        mensaje: "",
+      });
+
+    setTimeout(() => {
+  setEstado("");
+}, 4000);
+
+    } else {
+      setEstado("No se pudo enviar el mensaje.");
+    }
+  } catch (error) {
+    setEstado("Error de conexión con el servidor.");
+    console.error(error);
+  } finally {
+    setEnviando(false);
+  }
+};
+return (
+
     <section
       id="contacto"
       className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-24"
@@ -17,7 +71,7 @@ export default function Contacto() {
         Contacto
       </h2>
 
-      <p className="text-slate-300 text-center max-w-2xl mx-auto text-lg leading-8 mb-14">
+      <p className=" text-center max-w-2xl mx-auto text-lg leading-8 mb-14">
         ¿Tienes una idea, un proyecto o una oportunidad laboral?
         Estoy disponible para colaborar y crear soluciones reales.
       </p>
@@ -130,6 +184,111 @@ export default function Contacto() {
           </div>
 
         </div>
+        {/* Formulario de contacto */}
+<div className="mt-12 border-t border-slate-700 pt-10">
+  <h3 className="text-2xl font-bold text-white text-center mb-8">
+    Envíame un mensaje
+  </h3>
+   <form
+    onSubmit={enviarFormulario}
+    className="max-w-2xl mx-auto space-y-6"
+>
+
+    <div>
+      <label
+        htmlFor="nombre"
+        className="block text-cyan-400 font-semibold mb-2"
+      >
+        Nombre
+      </label>
+        <input
+  type="text"
+  id="nombre"
+  name="nombre"
+  placeholder="Tu nombre"
+  required
+  value={formulario.nombre}
+  onChange={(e) => {
+    const valor = e.target.value.replace(
+      /[^A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]/g,
+      ""
+    );
+
+    setFormulario({
+      ...formulario,
+      nombre: valor,
+    });
+  }}
+  className="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white outline-none focus:border-cyan-400 transition"
+/>
+   
+    </div>
+
+    <div>
+      <label
+        htmlFor="correo"
+        className="block text-cyan-400 font-semibold mb-2"
+      >
+        Correo
+      </label>
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="tucorreo@gmail.com"
+         required
+       value={formulario.correo}
+       onChange={(e) =>
+       setFormulario({
+       ...formulario,
+       correo: e.target.value,
+    })
+  }
+        className="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white outline-none focus:border-cyan-400 transition"
+      />
+    </div>
+
+    <div>
+      <label
+        htmlFor="mensaje"
+        className="block text-cyan-400 font-semibold mb-2"
+      >
+        Mensaje
+      </label>
+
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="6"
+        placeholder="Escribe tu mensaje..."
+         required
+       value={formulario.mensaje}
+       onChange={(e)=>
+        setFormulario({
+          ...formulario,
+          mensaje: e.target.value
+        })
+       }
+
+        className="w-full bg-slate-900 border border-slate-600 rounded-xl px-4 py-3 text-white outline-none focus:border-cyan-400 transition resize-none"
+      ></textarea>
+    </div>
+
+    <button
+  type="submit"
+  disabled={enviando}
+  className="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-4 rounded-xl transition disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {enviando ? "Enviando..." : "Enviar mensaje"}
+</button>
+
+  {estado && (
+  <p className="text-center text-white">
+    {estado}
+  </p>
+)}
+  </form>
+  </div>
 
         {/* Botones */}
         <div className="flex flex-col md:flex-row flex-wrap justify-center gap-5 mt-14">

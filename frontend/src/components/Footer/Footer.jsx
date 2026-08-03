@@ -8,17 +8,17 @@ export default function Footer() {
           LuisDev
         </h2>
 
-        <p className="text-slate-300 mb-3">
+        <p className="text-white mb-3">
           Desarrollador Full Stack
         </p>
 
-        <p className="text-slate-500 mb-8">
+        <p className="text-slate-300 mb-8">
           Python • Django • React • PostgreSQL
         </p>
 
         <div className="border-t border-slate-700 pt-6">
 
-          <p className="text-slate-500 text-sm">
+          <p className="text-slate-400 text-sm">
             © 2026 Luis de la Rosa. Todos los derechos reservados.
           </p>
 
