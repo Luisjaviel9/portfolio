@@ -1,42 +1,21 @@
-const proyectos = [
-  {
-    titulo: "Sistema de Planificación de Rutas",
-    descripcion:
-      "Sistema Full Stack para importar pedidos desde Excel, planificar rutas de distribución y administrar camiones.",
-    tecnologias: "Django • Django REST Framework • React • PostgreSQL",
-    estado: "En desarrollo",
-  },
-
-  {
-    titulo: "Portafolio Web",
-    descripcion:
-      "Portafolio profesional desarrollado con React para mostrar mis habilidades y proyectos.",
-    tecnologias: "React • Tailwind CSS • Vite",
-    estado: "En desarrollo",
-  },
-
-  {
-    titulo: "Sistema de Capacitación en Línea",
-    descripcion:
-      "Plataforma educativa desarrollada para fortalecer el aprendizaje mediante contenido interactivo.",
-    tecnologias: "Python • Django • PostgreSQL",
-    estado: "Finalizado",
-  },
-];
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
 export default function Proyectos() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <section
       id="proyectos"
-      className="max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24"
+      className="max-w-6xl mx-auto px-4 md:px-8 py-16 md:py-24"
     >
-      <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-10 md:mb-14">
-        Proyectos
+      <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 md:mb-12">
+        {t.proyectos.titulo}
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        {proyectos.map((proyecto) => (
+        {t.proyectos.items.map((proyecto) => (
 
           <div
             key={proyecto.titulo}
@@ -45,7 +24,7 @@ export default function Proyectos() {
 
             <div className="h-44 bg-slate-700 rounded-xl flex items-center justify-center mb-6">
               <span className="text-slate-400">
-                Imagen del proyecto
+                {t.proyectos.imagen}
               </span>
             </div>
 
@@ -70,7 +49,6 @@ export default function Proyectos() {
         ))}
 
       </div>
-
     </section>
   );
 }

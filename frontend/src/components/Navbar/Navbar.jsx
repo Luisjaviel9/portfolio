@@ -1,10 +1,14 @@
 import { useState, useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import LanguageToggle from "../LanguageToggle/LanguageToggle.jsx";
 
 export default function Navbar() {
   const [menuAbierto, setMenuAbierto] = useState(false);
+
   const { modoOscuro } = useContext(ThemeContext);
+  const { t } = useContext(LanguageContext);
 
   return (
     <nav
@@ -14,6 +18,7 @@ export default function Navbar() {
           : "bg-white border-slate-200"
       }`}
     >
+      {/* Contenedor principal */}
       <div className="flex h-20 w-full items-center px-12 lg:px-20">
 
         {/* Logo */}
@@ -32,7 +37,7 @@ export default function Navbar() {
               href="#home"
               className="hover:text-cyan-400 transition-colors"
             >
-              Inicio
+              {t.navbar.inicio}
             </a>
           </li>
 
@@ -41,7 +46,7 @@ export default function Navbar() {
               href="#about"
               className="hover:text-cyan-400 transition-colors"
             >
-              Sobre mí
+              {t.navbar.sobreMi}
             </a>
           </li>
 
@@ -50,7 +55,7 @@ export default function Navbar() {
               href="#technologies"
               className="hover:text-cyan-400 transition-colors"
             >
-              Tecnologías
+              {t.navbar.tecnologias}
             </a>
           </li>
 
@@ -59,7 +64,7 @@ export default function Navbar() {
               href="#proyectos"
               className="hover:text-cyan-400 transition-colors"
             >
-              Proyectos
+              {t.navbar.proyectos}
             </a>
           </li>
 
@@ -68,13 +73,14 @@ export default function Navbar() {
               href="#contacto"
               className="hover:text-cyan-400 transition-colors"
             >
-              Contacto
+              {t.navbar.contacto}
             </a>
           </li>
         </ul>
 
-        {/* Luna */}
-        <div className="ml-auto">
+        {/* Botones */}
+        <div className="ml-auto flex items-center gap-4">
+          <LanguageToggle />
           <ThemeToggle />
         </div>
 
@@ -87,7 +93,6 @@ export default function Navbar() {
         >
           {menuAbierto ? "✕" : "☰"}
         </button>
-
       </div>
 
       {/* Menú móvil */}
@@ -98,36 +103,51 @@ export default function Navbar() {
           }`}
         >
           <li>
-            <a href="#home" onClick={() => setMenuAbierto(false)}>
-              Inicio
+            <a
+              href="#home"
+              onClick={() => setMenuAbierto(false)}
+            >
+              {t.navbar.inicio}
             </a>
           </li>
 
           <li>
-            <a href="#about" onClick={() => setMenuAbierto(false)}>
-              Sobre mí
+            <a
+              href="#about"
+              onClick={() => setMenuAbierto(false)}
+            >
+              {t.navbar.sobreMi}
             </a>
           </li>
 
           <li>
-            <a href="#technologies" onClick={() => setMenuAbierto(false)}>
-              Tecnologías
+            <a
+              href="#technologies"
+              onClick={() => setMenuAbierto(false)}
+            >
+              {t.navbar.tecnologias}
             </a>
           </li>
 
           <li>
-            <a href="#proyectos" onClick={() => setMenuAbierto(false)}>
-              Proyectos
+            <a
+              href="#proyectos"
+              onClick={() => setMenuAbierto(false)}
+            >
+              {t.navbar.proyectos}
             </a>
           </li>
 
           <li>
-            <a href="#contacto" onClick={() => setMenuAbierto(false)}>
-              Contacto
+            <a
+              href="#contacto"
+              onClick={() => setMenuAbierto(false)}
+            >
+              {t.navbar.contacto}
             </a>
           </li>
         </ul>
       )}
     </nav>
   );
-}
+} 

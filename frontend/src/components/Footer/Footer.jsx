@@ -1,4 +1,8 @@
+
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 export default function Footer() {
+  const { t } = useContext(LanguageContext);
   return (
     <footer className="bg-slate-900 border-t border-slate-700 mt-24">
 
@@ -9,7 +13,7 @@ export default function Footer() {
         </h2>
 
         <p className="text-white mb-3">
-          Desarrollador Full Stack
+          {t.footer.profesion}
         </p>
 
         <p className="text-slate-300 mb-8">
@@ -19,7 +23,8 @@ export default function Footer() {
         <div className="border-t border-slate-700 pt-6">
 
           <p className="text-slate-400 text-sm">
-            © 2026 Luis de la Rosa. Todos los derechos reservados.
+           {t.footer.derechos}
+           
           </p>
 
         </div>

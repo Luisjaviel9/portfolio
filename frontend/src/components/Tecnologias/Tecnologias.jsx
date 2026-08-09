@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
+
 const tecnologias = [
   { nombre: "Python", icono: "🐍" },
   { nombre: "Django", icono: "🌐" },
@@ -10,13 +13,14 @@ const tecnologias = [
 ];
 
 export default function Tecnologias() {
+  const { t } = useContext(LanguageContext);
   return (
     <section
-      id="technologias"
+      id="technologies"
       className="max-w-7xl mx-auto px-8 py-24"
     >
       <h2 className="text-4xl font-bold text-cyan-400 mb-14">
-        Tecnologías
+       {t.tecnologias.titulo}
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
