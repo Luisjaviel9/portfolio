@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {/* Menú escritorio */}
         <ul
-          className={`hidden md:flex items-center gap-10 ml-280 mr-8 ${
+          className={`hidden md:flex items-center gap-10 ml-280 mr-3 ${
             modoOscuro ? "text-white" : "text-slate-900"
           }`}
         >
