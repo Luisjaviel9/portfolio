@@ -44,7 +44,7 @@ export default function Navbar() {
           <li>
             <a
               href="#about"
-              className="hover:text-cyan-400 transition-colors"
+              className="hover:text-cyan-400 transition-colors  whitespace-nowrap""
             >
               {t.navbar.sobreMi}
             </a>
