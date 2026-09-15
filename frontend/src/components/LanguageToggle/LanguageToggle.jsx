@@ -7,7 +7,7 @@ export default function LanguageToggle() {
   return (
     <button
       onClick={() => setIdioma(idioma === "es" ? "en" : "es")}
-      className="border border-cyan-400 px-3 py-1 rounded-md hover:bg-cyan-400 hover:text-white transition"
+      className="border border-cyan-400 px-2 py-1 text-sm rounded-md hover:bg-cyan-400 hover:text-white transition"
     >
       {idioma.toUpperCase()}
     </button>
