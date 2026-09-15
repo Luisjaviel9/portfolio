@@ -62,15 +62,15 @@ const es = {
       {
         tipo: "Certificación",
         titulo: "React",
-        institucion: "En proceso de aprendizaje",
-        estado: "En progreso",
+        institucion: "Formación completada",
+        estado: "finalizado",
       },
 
       {
         tipo: "Certificación",
         titulo: "Django REST Framework",
-        institucion: "En proceso de aprendizaje",
-        estado: "En progreso",
+        institucion: "Formación completada",
+        estado: "Finalizado",
       },
 
       {
@@ -98,7 +98,7 @@ const es = {
           "Sistema Full Stack para importar pedidos desde Excel, planificar rutas de distribución y administrar camiones.",
         tecnologias:
           "Django • Django REST Framework • React • PostgreSQL",
-        estado: "En desarrollo",
+        estado: "En progreso",
       },
 
       {
@@ -107,7 +107,7 @@ const es = {
           "Portafolio profesional desarrollado con React para mostrar mis habilidades y proyectos.",
         tecnologias:
           "React • Tailwind CSS • Vite",
-        estado: "En desarrollo",
+        estado: "Finalizado",
       },
 
       {

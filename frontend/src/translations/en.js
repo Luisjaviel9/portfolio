@@ -61,15 +61,15 @@ const en = {
       {
         tipo: "Certification",
         titulo: "React",
-        institucion: "Currently learning",
-        estado: "In Progress",
+        institucion: "Training Completed",
+        estado: "Completed",
       },
 
       {
         tipo: "Certification",
         titulo: "Django REST Framework",
-        institucion: "Currently learning",
-        estado: "In Progress",
+        institucion: "Training Completed",
+        estado: "Completed",
       },
 
       {
@@ -106,7 +106,7 @@ const en = {
           "Professional portfolio developed with React to showcase my skills and projects.",
         tecnologias:
           "React • Tailwind CSS • Vite",
-        estado: "In Development",
+        estado: "Completed",
       },
 
       {

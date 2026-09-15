@@ -3,7 +3,7 @@ import { LanguageContext } from "../../context/LanguageContext";
 import { ThemeContext } from "../../context/ThemeContext";
 
 export default function Hero() {
-  const { t } = useContext(LanguageContext);
+  const { t, idioma} = useContext(LanguageContext);
   const { modoOscuro } = useContext(ThemeContext);
 
   return (
@@ -70,24 +70,28 @@ export default function Hero() {
             </a>
 
             {/* Descargar CV */}
-            <a
-              href="/cv/Luis_De_La_Rosa_CV.pdf"
-              download
-              className="
-                border
-                border-cyan-500
-                text-cyan-400
-                hover:bg-cyan-500
-                hover:text-white
-                px-7
-                py-3
-                rounded-lg
-                transition
-                duration-300
-              "
-            >
-              {t.hero.descargarCv}
-            </a>
+<a
+  href={
+    idioma === "es"
+      ? "/cv/CV_Luis_de_la_Rosa.pdf"
+      : "/cv/CV_Luis_de_la_Rosa_English.pdf"
+  }
+  download
+  className="
+    border
+    border-cyan-500
+    text-cyan-400
+    hover:bg-cyan-500
+    hover:text-white
+    px-7
+    py-3
+    rounded-lg
+    transition
+    duration-300
+  "
+>
+  {t.hero.descargarCv}
+</a>
 
             {/* GitHub */}
             <a
