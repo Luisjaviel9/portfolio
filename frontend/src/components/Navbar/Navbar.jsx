@@ -79,7 +79,7 @@ export default function Navbar() {
         </ul>
 
         {/* Botones */}
-        <div className="ml-auto flex items-center gap-4">
+        <div className="ml-auto flex items-center gap-2">
           <LanguageToggle />
           <ThemeToggle />
         </div>
