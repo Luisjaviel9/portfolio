@@ -28,7 +28,7 @@ especializacion:
   "I mainly work with Python, Django REST Framework, React, and PostgreSQL while continuing to strengthen my Full Stack development skills.",
 
 objetivo:
-  "I am also currently learning generative artificial intelligence, with the goal of integrating it into software solutions that help solve real-world problems.",
+  "I also incorporate generative AI into my development workflow, using it to support code analysis, generation and improvement, documentation, and problem-solving.",
     actualmente: "Currently",
 
     aprendiendo:
