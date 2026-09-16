@@ -44,42 +44,56 @@ const en = {
   },
 
   formacion: {
-    titulo: "Education and Certifications",
+  titulo: "Education and Certifications",
 
-    descripcion:
-      "I believe in continuous learning. My goal is to stay up to date with the most in-demand technologies in software development and cloud computing.",
+  descripcion:
+    "I believe in continuous learning. My goal is to stay up to date with the most in-demand technologies in software development, artificial intelligence, and cloud computing.",
 
-    items: [
-      {
-        tipo: "Academic Education",
-        titulo: "Higher Technician in Software Development",
-        institucion:
-          "Instituto Técnico Superior Comunitario (ITSC)",
-        estado: "Completed",
-      },
+  items: [
+    {
+      tipo: "Academic Education",
+      titulo: "Higher Technician in Software Development",
+      institucion:
+        "Instituto Técnico Superior Comunitario (ITSC)",
+      estado: "Completed",
+    },
 
-      {
-        tipo: "Certification",
-        titulo: "React",
-        institucion: "Training Completed",
-        estado: "Completed",
-      },
+    {
+      tipo: "Certification",
+      titulo: "React",
+      institucion: "Training Completed",
+      estado: "Completed",
+    },
 
-      {
-        tipo: "Certification",
-        titulo: "Django REST Framework",
-        institucion: "Training Completed",
-        estado: "Completed",
-      },
+    {
+      tipo: "Certification",
+      titulo: "Django REST Framework",
+      institucion: "Training Completed",
+      estado: "Completed",
+    },
 
-      {
-        tipo: "Coming Soon",
-        titulo: "AWS Cloud Practitioner",
-        institucion: "Professional Goal",
-        estado: "Pending",
-      },
-    ],
-  },
+    {
+      tipo: "Artificial Intelligence Course",
+      titulo: "Generative Artificial Intelligence",
+      institucion: "Microsoft",
+      estado: "Completed",
+    },
+
+    {
+      tipo: "Artificial Intelligence Program",
+      titulo: "Generative AI for Software Development",
+      institucion: "DeepLearning.AI",
+      estado: "In Progress",
+    },
+
+    {
+      tipo: "Coming Soon",
+      titulo: "AWS Cloud Practitioner",
+      institucion: "Professional Goal",
+      estado: "Pending",
+    },
+  ],
+},
 
   tecnologias: {
     titulo: "Technologies",

@@ -45,42 +45,56 @@ const es = {
   },
 
   formacion: {
-    titulo: "Formación y Certificaciones",
+  titulo: "Formación y Certificaciones",
 
-    descripcion:
-      "Creo en el aprendizaje continuo. Mi objetivo es mantenerme actualizado con las tecnologías más demandadas del desarrollo de software y la computación en la nube.",
+  descripcion:
+    "Creo en el aprendizaje continuo. Mi objetivo es mantenerme actualizado con las tecnologías más demandadas del desarrollo de software, la inteligencia artificial y la computación en la nube.",
 
-    items: [
-      {
-        tipo: "Formación Académica",
-        titulo: "Técnico Superior en Desarrollo de Software",
-        institucion:
-          "Instituto Técnico Superior Comunitario (ITSC)",
-        estado: "Finalizado",
-      },
+  items: [
+    {
+      tipo: "Formación Académica",
+      titulo: "Técnico Superior en Desarrollo de Software",
+      institucion:
+        "Instituto Técnico Superior Comunitario (ITSC)",
+      estado: "Finalizado",
+    },
 
-      {
-        tipo: "Certificación",
-        titulo: "React",
-        institucion: "Formación completada",
-        estado: "finalizado",
-      },
+    {
+      tipo: "Certificación",
+      titulo: "React",
+      institucion: "Formación completada",
+      estado: "Finalizado",
+    },
 
-      {
-        tipo: "Certificación",
-        titulo: "Django REST Framework",
-        institucion: "Formación completada",
-        estado: "Finalizado",
-      },
+    {
+      tipo: "Certificación",
+      titulo: "Django REST Framework",
+      institucion: "Formación completada",
+      estado: "Finalizado",
+    },
 
-      {
-        tipo: "Próximamente",
-        titulo: "AWS Cloud Practitioner",
-        institucion: "Meta profesional",
-        estado: "Pendiente",
-      },
-    ],
-  },
+    {
+      tipo: "Curso de Inteligencia Artificial",
+      titulo: "Inteligencia Artificial Generativa",
+      institucion: "Microsoft",
+      estado: "Finalizado",
+    },
+
+    {
+      tipo: "Programa de Inteligencia Artificial",
+      titulo: "Generative AI for Software Development",
+      institucion: "DeepLearning.AI",
+      estado: "En curso",
+    },
+
+    {
+      tipo: "Próximamente",
+      titulo: "AWS Cloud Practitioner",
+      institucion: "Meta profesional",
+      estado: "Pendiente",
+    },
+  ],
+},
 
   tecnologias: {
     titulo: "Tecnologías",
