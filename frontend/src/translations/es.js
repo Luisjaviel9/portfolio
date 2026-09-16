@@ -21,17 +21,14 @@ const es = {
   about: {
   titulo: "Sobre mí",
 
-  sobreMi:
-    "Soy un desarrollador Full Stack apasionado por crear aplicaciones web modernas, eficientes y escalables.",
+ sobreMi:
+  "Soy un desarrollador Full Stack apasionado por crear aplicaciones web modernas, eficientes y escalables.",
 
-  crecimiento: "En constante crecimiento",
+especializacion:
+  "Trabajo principalmente con Python, Django REST Framework, React y PostgreSQL, mientras continúo fortaleciendo mis conocimientos en desarrollo Full Stack.",
 
-  especializacion:
-    "Actualmente me especializo en Python, Django, Django REST Framework, React y PostgreSQL.",
-
-  objetivo:
-    "Mi objetivo es desarrollar software que ayude a resolver problemas reales mediante tecnología.",
-
+objetivo:
+  "Actualmente también me estoy formando en inteligencia artificial generativa, con el objetivo de integrarla en soluciones de software que ayuden a resolver problemas reales.",
   actualmente: "Actualmente",
 
   aprendiendo:
@@ -40,8 +37,8 @@ const es = {
   construyendo:
     "Construyendo proyectos Full Stack",
 
-  ia:
-    "Aprendiendo IA generativa aplicada al desarrollo de software",
+ ia:
+  "Aprendiendo IA generativa para desarrollo de software",
 
   preparandome:
     "Preparándome para trabajar como desarrollador Full Stack",
