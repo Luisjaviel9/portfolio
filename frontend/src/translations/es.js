@@ -28,7 +28,7 @@ especializacion:
   "Trabajo principalmente con Python, Django REST Framework, React y PostgreSQL, mientras continúo fortaleciendo mis conocimientos en desarrollo Full Stack.",
 
 objetivo:
-  "Actualmente también me estoy formando en inteligencia artificial generativa, con el objetivo de integrarla en soluciones de software que ayuden a resolver problemas reales.",
+  "También incorporo inteligencia artificial generativa en mi proceso de desarrollo, aplicándola como apoyo en análisis, generación y mejora de código, documentación y resolución de problemas.",
   actualmente: "Actualmente",
 
   aprendiendo:
