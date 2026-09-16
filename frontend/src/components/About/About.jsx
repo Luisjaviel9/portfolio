@@ -55,24 +55,23 @@ export default function About() {
             <h3 className="text-2xl font-bold text-white mb-8">
               {t.about.actualmente}
             </h3>
+           <ul className="space-y-5 text-slate-300">
+  <li>
+    🚀 {t.about.aprendiendo}
+  </li>
 
-            <ul className="space-y-5 text-slate-300">
-              <li>
-                🚀 {t.about.aprendiendo}
-              </li>
+  <li>
+    💻 {t.about.construyendo}
+  </li>
 
-              <li>
-                💻 {t.about.construyendo}
-              </li>
+  <li>
+    🤖 {t.about.ia}
+  </li>
 
-              <li>
-                📚 {t.about.mejorando}
-              </li>
-
-              <li>
-                🎯 {t.about.preparandome}
-              </li>
-            </ul>
+  <li>
+    🎯 {t.about.preparandome}
+  </li>
+</ul>
           </div>
         </div>
 

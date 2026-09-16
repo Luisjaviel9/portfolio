@@ -34,13 +34,17 @@ const en = {
 
     actualmente: "Currently",
 
-    aprendiendo: "Learning React and Django REST Framework",
+    aprendiendo:
+  "Deepening my knowledge of React and Django REST Framework",
 
-    construyendo: "Building Full Stack projects",
+construyendo:
+  "Building Full Stack projects",
 
-    mejorando: "Improving software architecture",
+ia:
+  "Learning generative AI applied to software development",
 
-    preparandome: "Preparing to work as a developer",
+preparandome:
+  "Preparing to work as a Full Stack Developer",
   },
 
   formacion: {
